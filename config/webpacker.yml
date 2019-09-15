@@ -7,7 +7,7 @@ default: &default
   check_yarn_integrity: false
   webpack_compile_output: false
   resolved_paths: []
-  cache_manifest: false
+  cache_manifest: true
   extract_css: false
 
   static_assets_extensions:
@@ -41,7 +41,7 @@ default: &default
 
 development:
   <<: *default
-  compile: true
+  compile: false
   check_yarn_integrity: false
   dev_server:
     https: false
